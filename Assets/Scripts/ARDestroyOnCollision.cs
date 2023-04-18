@@ -17,7 +17,7 @@ public class ARDestroyOnCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("MainCamera"))
         {
-            objectSpawner.HandleObjectDestroyed(gameObject);
+            objectSpawner.SetSpawned(false);
             Destroy(gameObject);
         }
     }
